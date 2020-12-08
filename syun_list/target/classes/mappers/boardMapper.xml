@@ -17,4 +17,13 @@
    
    </insert>
    
+   <select id="list" resultType="com.syun.is.vo.BoardVO">
+		SELECT   BNO
+			   , TITLE
+			   , WRITER
+			   , REGDATE
+		  FROM MP_BOARD
+		  ORDER BY BNO DESC
+	</select>
+   
 </mapper>
